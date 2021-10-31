@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.options-container{
+    background-color: #f1f2f6;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
+}
+
+.options-container:hover{
+    cursor: pointer;
+}
+
+.tools-container{
+    height: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    position: absolute;
+    top: 1rem;
+    left: 23vw;
+    display: flex;
+    align-items: center;
+}
+
+.scale-tools{
+    animation-name: scale-tools;
+    animation-duration: 1s;
+}
+
+@keyframes scale-tools{
+    0%{
+        transform: scale(0.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.tools{
+    width: 55vw;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pencil-tool-container{
+    width: 10rem;
+    height: 5rem;
+    background-color: #f1f2f6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 6rem;
+    left: 23vw;
+    display: none;
+}
+
+.pencil-width-container{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pencil-width-container input{
+    width: 80%;
+}
+
+.pencil-color-container{
+    height: calc(100% - 2rem);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pencil-color{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.black{
+    background-color: #000;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.eraser-tool-container{
+    width: 7rem;
+    height: 2rem;
+    background-color: #f1f2f6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 6rem;
+    left: 34vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.eraser-tool-container input{
+    width: 80%;
+}
+
+.sticky-tool-container{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+}
+
+.header-container{
+    height: 2rem;
+    background-color: #f1f2f6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-container > *{
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+
+.minimize{
+    background-color: green
+}
+
+.remove{
+    background-color: red;
+}
+
+.content-container{
+    height: calc(100% - 2rem);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
